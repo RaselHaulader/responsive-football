@@ -12,6 +12,11 @@ body{
     font-family: 'Poppins', sans-serif; 
 
 }
+
+.section-container{
+    display: flex;
+    width: 1100px;
+}
 .section-half{
     width: 50%;
     padding: 10px;
@@ -42,6 +47,7 @@ body{
     color: #E02C6D;
    
 }
+
 /*-------------------------------------
  header section styles from here  
  --------------------------------------*/
@@ -52,10 +58,8 @@ header{
     justify-content: center;
 
 }
-.section-container{
-    display: flex;
+.header-container {
     align-items: center;
-    width: 1100px;
     padding: 100px 0 86px 0;
 }
 .header-details h1{
@@ -68,21 +72,51 @@ header{
     width: 556px;
     height: 438px;
 }
+
+.header-img img:hover{
+    
+    animation-name: anim;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+@keyframes anim {
+    25%{
+        transform:rotate(10deg) scale(1.05);
+        
+    }
+    50%{
+        transform:rotate(0deg) scale(1);
+    }
+    75%{
+        transform: rotate(-10deg) 
+        scale(0.95);
+    }
+    100%{
+        transform:rotate(0deg) scale(1);
+    }
+    
+}
 /*-------------------------------------
  main section styles from here  
  --------------------------------------*/
 main{
     display: flex;
-   
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
+
+/*-------------------------------------
+ grid section styles from here  
+ --------------------------------------*/
 .grid-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
     row-gap: 27px;
     width: 1056px;
-    margin-top: 70px;
+    margin:70px 0 165px;
 }
 .grid-items{
     padding: 15px 15px 30px 15px;
@@ -90,4 +124,116 @@ main{
 }
 .grid-items img{
     width: 100%;
+}
+/*-------------------------------------
+ highlight-section styles from here  
+ --------------------------------------*/
+.highlight-details h2{
+   font-size: 48px;
+   font-weight: 700;
+}
+ .higlight-img img{
+     width: 100%;
+ }
+ /*-------------------------------------
+ Footer styles from here  
+ --------------------------------------*/
+ footer{
+     display: flex;
+     justify-content: center;
+     margin-top: 95px ;
+   
+ }
+.footer-section{
+    width: 483px;
+    padding: 63px 0 30px;
+    text-align: center;
+   
+}
+.footer-section img{
+    width: 100%;
+}
+.footer-icon{
+  margin: 20px 0 30px;
+}
+.footer-icon a{
+    color: #969BAB;
+    background-color: #E7E7E8;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0 7px;
+    display: inline-block;
+    transition: .2s;
+}
+.footer-icon a:hover{
+    color:white;
+    background-color:#2d25a0bd;
+    transform: scale(1.1);
+}
+
+ /*-------------------------------------
+  Media Responsive styles from here  
+ --------------------------------------*/
+
+  /* style for mobile device */
+
+ 
+  @media only screen and (max-width: 688px) {
+      
+    .section-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    .section-half{
+       width: 90%;
+    }
+    .header-img img{
+       width: 98%;
+    }
+    .header-details h1{
+        font-weight: 700;
+        font-size: 36px;
+        margin-bottom: 17px;
+    }
+    .grid-container{
+        grid-template-columns: 1fr;
+        width: 95%;
+        padding: 5px;
+    }
+    .grid-items{
+        padding: 10px;
+    }
+    .footer-section{
+        width: 100%;
+    }
+}
+  /* style for tablet device */
+
+@media only screen and (min-width: 688px) and (max-width:992px) {
+     .section-container{
+        width: 100%;
+    }
+    .section-half{
+       width: 50%;
+       padding: 10px;
+    }
+    .header-img img{
+       width: 98%;
+    }
+    .header-details h1{
+        font-weight: 700;
+        font-size: 46px;
+        margin-bottom: 17px;
+    }
+    .grid-container{
+        grid-template-columns:repeat(2, 1fr);
+        width: 90%;
+        padding: 5px;
+    }
+    .grid-items{
+        padding: 10px;
+    }
+    
 }
