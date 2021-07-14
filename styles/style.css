@@ -52,7 +52,7 @@ body{
  header section styles from here  
  --------------------------------------*/
 header{
-    background: #2D25A0;
+    background: #5908a5;
     color: #FFFFFF;
     display: flex;
     justify-content: center;
@@ -136,6 +136,74 @@ main{
      width: 100%;
  }
  /*-------------------------------------
+ moments-section styles from here  
+ --------------------------------------*/
+ .moments-container{
+    box-shadow: 7px 7px 30px rgba(128, 128, 128, 0.247);
+    margin-top: 50px;
+    padding: 5px;
+ }
+ .moments-container h1{
+     text-align: center;
+     font-size: 50px;
+
+ }
+ .moments-grid{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     height: 400px;
+     grid-gap:5px;
+ }
+ .moments-big-item, .moments-grid{
+     padding: 0px;
+     color: rgb(255, 255, 255);
+
+ }
+ .moments-big-item h2, .moments-grid-item h2{
+   margin-left: 10px;
+   background-color: rgba(0, 0, 0, 0.24);
+   font-weight: 500;
+   width: 100%;
+   
+
+}
+ .moments-big-item, .moments-grid-item{
+    display: flex;
+    
+    align-items: flex-end;
+    
+
+}
+
+ .moments-big-item{
+    background-image: url(../images/moments/moments-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 5px;
+    
+ }
+ .moments-grid-item:nth-child(1){
+     background-image: url(../images/moments/moments-2.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ .moments-grid-item:nth-child(2){
+     background-image: url(../images/moments/moments-3.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ .moments-grid-item:nth-child(3){
+     background-image: url(../images/moments/moments-4.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ .moments-grid-item:nth-child(4){
+     background-image: url(../images/moments/moments-5.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ 
+ /*-------------------------------------
  Footer styles from here  
  --------------------------------------*/
  footer{
@@ -202,12 +270,35 @@ main{
         width: 95%;
         padding: 5px;
     }
+    
     .grid-items{
         padding: 10px;
     }
+    .highlight-details h2{
+        font-size: 
+        30px;
+    }
+    .moments-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .moments-big-item{
+        margin-bottom: 5px;
+        height: 400px;
+        
+    }
+    footer{
+        margin-top: 20px;
+    }
     .footer-section{
         width: 100%;
+        padding-top: 30px;
     }
+    .footer-logo img{
+        width: 70%;
+    }
+    
 }
   /* style for tablet device */
 
@@ -234,6 +325,17 @@ main{
     }
     .grid-items{
         padding: 10px;
+    }
+    .highlight-details h2{
+        font-size: 
+        30px;
+    }
+    .moments-big-item, .moments-grid{
+        padding: 0px;
+   
+    }
+    footer{
+        margin-top: 20px;
     }
     
 }
