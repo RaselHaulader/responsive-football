@@ -135,6 +135,61 @@ main{
  .higlight-img img{
      width: 100%;
  }
+
+ 
+  /*-------------------------------------
+News styles from here  
+ --------------------------------------*/
+ .news-section{
+    width: 1056px;
+    margin-top: 60px;
+}
+.news-grid{
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr;
+    grid-column-gap: 20px;
+}
+.news-grid-item{
+   box-shadow: 7px 7px 30px rgba(128, 128, 128, 0.247);
+   padding: 5px;
+}
+.news-grid-item h2{
+    text-align: center;
+    color: crimson;
+}
+.top-news-card img{
+    width: 100%;
+}
+.news-mini-card{
+    display: flex;
+    align-items: flex-start;
+    padding: 0 5px;
+
+}
+.news-mini-card h6{
+    margin-top: 0px;
+    
+}
+.news-mini-card img{
+    width: 100px;
+    height: 80px;
+    margin-right: 10px;
+}
+.trending-news-li{
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+
+}
+.trending-news-ul{
+    list-style: none;
+    padding: 0 5px 0 10px;
+}
+.trending-news-li h5{
+   margin-top: 0;
+   margin-left: 10px;
+
+}
  /*-------------------------------------
  moments-section styles from here  
  --------------------------------------*/
@@ -201,58 +256,6 @@ main{
      background-image: url(../images/moments/moments-5.jpg);
      background-repeat: no-repeat;
      background-size: cover;
- }
-  /*-------------------------------------
-News styles from here  
- --------------------------------------*/
- .news-section{
-     width: 1056px;
-     margin-top: 60px;
- }
- .news-grid{
-     display: grid;
-     grid-template-columns: 3fr 2fr 2fr;
-     grid-column-gap: 20px;
- }
- .news-grid-item{
-    box-shadow: 7px 7px 30px rgba(128, 128, 128, 0.247);
- }
- .news-grid-item h2{
-     text-align: center;
-     color: crimson;
- }
- .top-news-card img{
-     width: 100%;
- }
- .news-mini-card{
-     display: flex;
-     align-items: flex-start;
-     padding: 0 5px;
-
- }
- .news-mini-card h6{
-     margin-top: 0px;
-     
- }
- .news-mini-card img{
-     width: 100px;
-     height: 80px;
-     margin-right: 10px;
- }
- .trending-news-li{
-     list-style-type: none;
-     display: flex;
-     align-items: flex-start;
-
- }
- .trending-news-ul{
-     list-style: none;
-     padding: 0 5px 0 10px;
- }
- .trending-news-li h5{
-    margin-top: 0;
-    margin-left: 10px;
-
  }
  /*-------------------------------------
  Footer styles from here  
