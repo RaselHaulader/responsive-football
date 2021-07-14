@@ -23,39 +23,57 @@ body{
 }
 
 /* button styles  */
-
 .watch-btn{
-    background-color:#E02C6D;
-    color: #ffffff;
-    padding: 10px 24px;
-    font-size: 16px;
-    border: none;
-    transition: .3s;
+   padding: 0;
+   border: none;
+
 }
 .watch-btn a{
-    color: #ffffff;
     text-decoration: none;
-    margin-right: 8px;
-    transition: .3s;
-}
-.watch-btn:hover{
-    color: #E02C6D;
-    background-color:white;
-    box-shadow: 2px 2px 50px gray;
-}
-.watch-btn:hover.watch-btn a{
-    color: #E02C6D;
-   
-}
+    color: white;
+    background:#E02C6D;
+    padding: 10px;
+    font-size: 16px;
+    transition: 0.3s;
+} 
+.watch-btn a:hover{
+    text-decoration: none;
+    color: #E02C6D ;
+    background:white;
+    padding: 10px;
+    font-size: 16px;
+    box-shadow: 7px 7px 30px rgba(128, 128, 128, 0.247);
 
+} 
+.fa-arrow-right{
+    margin: 0 5px;
+}
+    
 /*-------------------------------------
- header section styles from here  
+Nav section styles from here  
+ --------------------------------------*/
+ nav{
+     width: 1100px;
+     display: flex;
+     justify-content: space-between;
+     margin-top: 40px;
+
+ }
+.nav-link a{
+    color: white;
+    text-decoration: none;
+    margin-right: 36px;
+    font-weight: 600;
+}
+/*-------------------------------------
+ header banner section styles from here  
  --------------------------------------*/
 header{
     background: #5908a5;
     color: #FFFFFF;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 }
 .header-container {
@@ -120,7 +138,7 @@ main{
 }
 .grid-items{
     padding: 15px 15px 30px 15px;
-    box-shadow: 7px 7px 30px rgba(128, 128, 128, 0.247);
+    box-shadow: 7px 7px 30px rgba(128, 128, 128, 0.342);
 }
 .grid-items img{
     width: 100%;
@@ -138,8 +156,16 @@ main{
 
  
   /*-------------------------------------
-News styles from here  
+    News styles from here  
  --------------------------------------*/
+ .news-title{
+     text-align: center;
+     font-size: 30px;
+     box-shadow: 7px 7px 30px rgba(128, 128, 128, 0.247);
+     font-weight: 500;
+     color: rgb(129, 129, 129);
+
+ }
  .news-section{
     width: 1056px;
     margin-top: 60px;
@@ -167,13 +193,14 @@ News styles from here
 
 }
 .news-mini-card h6{
-    margin-top: 0px;
+    margin:0 0px;
     
 }
 .news-mini-card img{
     width: 100px;
     height: 80px;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 .trending-news-li{
     list-style-type: none;
@@ -202,7 +229,6 @@ News styles from here
  .moments-container h1{
      text-align: center;
      font-size: 50px;
-
  }
  .moments-grid{
      display: grid;
@@ -220,16 +246,11 @@ News styles from here
    background-color: rgba(0, 0, 0, 0.24);
    font-weight: 500;
    width: 100%;
-   
-
 }
  .moments-big-item, .moments-grid-item{
     display: flex;
     align-items: flex-end;
-    
-
 }
-
  .moments-big-item{
     background-image: url(../images/moments/moments-1.jpg);
     background-repeat: no-repeat;
@@ -311,6 +332,9 @@ News styles from here
     .section-half{
        width: 90%;
     }
+    .nav-section{
+       display: none;
+    }
     .header-img img{
        width: 98%;
     }
@@ -352,11 +376,17 @@ News styles from here
         margin-right: 0;
         
     }
+    .news-title{
+       font-size: 20px;
+    }
     .news-section{
         width: 90%;
     }
    
-   
+    .news-mini-card img{
+        
+        margin-bottom: 5px;
+    }
     footer{
         margin-top: 20px;
     }
@@ -378,6 +408,16 @@ News styles from here
     .section-half{
        width: 50%;
        padding: 10px;
+    }
+    .nav-section{
+        width: 95%;
+    }
+     nav{
+        width: 100%;
+    }
+    .nav-link a{
+        
+        margin-right: 5px;
     }
     .header-img img{
        width: 98%;
@@ -405,6 +445,14 @@ News styles from here
     }
     .news-section{
         width: 100%;
+    }
+    .news-mini-card h6{
+        font-size: 9px;
+    }
+    .news-mini-card img{
+        width: 70px;
+        height: 50px;
+        margin-bottom: 5px;
     }
     footer{
         margin-top: 20px;
