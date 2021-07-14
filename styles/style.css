@@ -142,6 +142,7 @@ main{
     box-shadow: 7px 7px 30px rgba(128, 128, 128, 0.247);
     margin-top: 50px;
     padding: 5px;
+    
  }
  .moments-container h1{
      text-align: center;
@@ -204,6 +205,55 @@ main{
   /*-------------------------------------
 News styles from here  
  --------------------------------------*/
+ .news-section{
+     width: 1056px;
+     margin-top: 60px;
+ }
+ .news-grid{
+     display: grid;
+     grid-template-columns: 3fr 2fr 2fr;
+     grid-column-gap: 20px;
+ }
+ .news-grid-item{
+    box-shadow: 7px 7px 30px rgba(128, 128, 128, 0.247);
+ }
+ .news-grid-item h2{
+     text-align: center;
+     color: crimson;
+ }
+ .top-news-card img{
+     width: 100%;
+ }
+ .news-mini-card{
+     display: flex;
+     align-items: flex-start;
+     padding: 0 5px;
+
+ }
+ .news-mini-card h6{
+     margin-top: 0px;
+     
+ }
+ .news-mini-card img{
+     width: 100px;
+     height: 80px;
+     margin-right: 10px;
+ }
+ .trending-news-li{
+     list-style-type: none;
+     display: flex;
+     align-items: flex-start;
+
+ }
+ .trending-news-ul{
+     list-style: none;
+     padding: 0 5px 0 10px;
+ }
+ .trending-news-li h5{
+    margin-top: 0;
+    margin-left: 10px;
+
+ }
  /*-------------------------------------
  Footer styles from here  
  --------------------------------------*/
@@ -266,7 +316,7 @@ News styles from here
         font-size: 36px;
         margin-bottom: 17px;
     }
-    .grid-container{
+    .grid-container, .news-grid {
         grid-template-columns: 1fr;
         width: 95%;
         padding: 5px;
@@ -290,12 +340,20 @@ News styles from here
         align-items: center;
         flex-direction: column;
     }
+    .moments-container h1{
+        font-size: 30px;
+    }
     .moments-big-item{
         margin-bottom: 5px;
         height: 400px;
         margin-right: 0;
         
     }
+    .news-section{
+        width: 90%;
+    }
+   
+   
     footer{
         margin-top: 20px;
     }
@@ -341,6 +399,9 @@ News styles from here
     .moments-big-item, .moments-grid{
         padding: 0px;
    
+    }
+    .news-section{
+        width: 100%;
     }
     footer{
         margin-top: 20px;
