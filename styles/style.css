@@ -159,7 +159,7 @@ main{
      color: rgb(255, 255, 255);
 
  }
- .moments-big-item h2, .moments-grid-item h2{
+ .moments-big-item h3, .moments-grid-item h3{
    margin-left: 10px;
    background-color: rgba(0, 0, 0, 0.24);
    font-weight: 500;
@@ -169,7 +169,6 @@ main{
 }
  .moments-big-item, .moments-grid-item{
     display: flex;
-    
     align-items: flex-end;
     
 
@@ -202,7 +201,9 @@ main{
      background-repeat: no-repeat;
      background-size: cover;
  }
- 
+  /*-------------------------------------
+News styles from here  
+ --------------------------------------*/
  /*-------------------------------------
  Footer styles from here  
  --------------------------------------*/
@@ -278,6 +279,12 @@ main{
         font-size: 
         30px;
     }
+    .moments-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: 1200px;
+       
+    }
     .moments-container{
         display: flex;
         align-items: center;
@@ -286,6 +293,7 @@ main{
     .moments-big-item{
         margin-bottom: 5px;
         height: 400px;
+        margin-right: 0;
         
     }
     footer{
